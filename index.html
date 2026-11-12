@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hezron Host - REAL</title>
+<style>
+*{margin:0;box-sizing:border-box;font-family:Arial}
+body{background:#0f172a;color:white}
+.top{background:linear-gradient(90deg,#7c3aed,#06b6d4);padding:18px;text-align:center}
+.wrap{max-width:480px;margin:auto;padding:12px}
+.card{background:#1e293b;border-radius:14px;padding:14px;margin:10px 0}
+textarea{width:100%;height:180px;padding:10px;border-radius:10px;border:none;font-size:13px;font-family:monospace}
+input{width:100%;padding:12px;border-radius:10px;border:none;margin:6px 0}
+.btn{width:100%;padding:14px;border:none;border-radius:10px;font-weight:bold;font-size:15px;margin-top:8px;cursor:pointer}
+.btn-host{background:#00c7b7}
+.btn-gh{background:white}
+.btn-copy{background:#7c3aed;color:white}
+.linkbox{background:#064e3b;border:1px solid #10b981;padding:12px;border-radius:10px;word-break:break-all;font-size:12px;margin-top:10px;display:none}
+.small{font-size:12px;color:#94a3b8;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="top"><h1>🚀 HEZRON HOST</h1><p>REAL HOSTING - Bure | By Hezron</p></div>
+<div class="wrap">
+
+<div class="card">
+<h3>1. Andika Jina La Site Yako</h3>
+<input id="sitename" placeholder="mfano: mychat-hezron">
+</div>
+
+<div class="card">
+<h3>2. Paste Code Yako Ya HTML Hapa</h3>
+<textarea id="code" placeholder="Paste code yako ya HTML hapa... mfano: <h1>Hello</h1>"></textarea>
+<button class="btn btn-host" onclick="hostReal()">🚀 HOST KWA UKWELI - Tengeneza Link</button>
+<div id="out" class="linkbox"></div>
+<button class="btn btn-copy" id="copyBtn" style="display:none" onclick="copyLink()">📋 Copy Link & Tuma Kwa Rafiki</button>
+</div>
+
+<div class="card">
+<h3>⬛ GitHub - Hifadhi Code</h3>
+<p class="small">Bonyeza hapa kuhifadhi code yako kwa GitHub Gist ya kweli. Itakupa link ya GitHub.</p>
+<button class="btn btn-gh" onclick="saveGithub()">⬛ Hifadhi Kwa GitHub Gist</button>
+</div>
+
+<div class="card">
+<h3>▲ Netlify Role - Hii Ndiyo Netlify</h3>
+<p class="small">Hezron Host sasa inafanya kazi ya Netlify: Inachukua code yako na inakupa link ambayo mtu yoyote anaweza kufungua. Hakuna haja ya ku-download.</p>
+</div>
+
+<div class="card">
+<h3>◆ Render Role - Server</h3>
+<p class="small">Render ni kwa server. Kwa Hezron Host V2, server bado ni <b>Coming Soon</b>. Frontend (HTML) ndiyo inafanya kazi 100% sasa. Ukishapata pesa ya server, tutaunganisha Render hapa.</p>
+<button class="btn" style="background:#334155;color:white" onclick="alert('Render Server: Coming Soon - Tunajenga server ya Hezron Host')">◆ Angalia Status Ya Server</button>
+</div>
+
+<div class="card">
+<h3>📖 Jinsi Ya Kutumia</h3>
+<p class="small">1. Paste code yako juu<br>2. Bonyeza HOST<br>3. Copy link<br>4. Tuma kwa WhatsApp kwa rafiki yako<br>5. Akifungua link, ataona website yako live!</p>
+</div>
+
+</div>
+<script>
+let lastLink = "";
+// Kama mtu amefungua link ya Hezron Host, onyesha website yake
+window.onload = function(){
+  let hash = location.hash;
+  if(hash && hash.length > 10){
+    try{
+      let code = decodeURIComponent(escape(atob(hash.slice(1))));
+      document.open(); document.write(code); document.close();
+    }catch(e){}
+  }
+}
+function hostReal(){
+  let code = document.getElementById('code').value.trim();
+  let name = document.getElementById('sitename').value.trim() || 'my-site';
+  if(!code){ alert('Paste code kwanza!'); return; }
+  let encoded = btoa(unescape(encodeURIComponent(code)));
+  let base = location.href.split('#')[0];
+  lastLink = base + '#' + encoded;
+  let out = document.getElementById('out');
+  out.style.display='block';
+  out.innerHTML = "<b>✅ SITE YAKO IKO LIVE!</b><br><br>Jina: "+name+"<br><br>Link yako ya kweli:<br>"+lastLink+"<br><br>Tuma hii link kwa rafiki yako!";
+  document.getElementById('copyBtn').style.display='block';
+  alert('Hongera! Site yako ' + name + ' iko LIVE sasa! Copy link utume kwa rafiki.');
+}
+function copyLink(){
+  navigator.clipboard.writeText(lastLink).then(()=>alert('Link ime-copy! Sasa itume WhatsApp.'));
+}
+function saveGithub(){
+  let code = document.getElementById('code').value.trim();
+  if(!code){ alert('Paste code kwanza'); return; }
+  window.open('https://gist.github.com/', '_blank');
+  alert('Umefunguliwa GitHub Gist. Paste code yako hapo na bonyeza Create - ndiyo GitHub role ya Hezron Host.');
+}
+</script>
+</body>
+  </html>
