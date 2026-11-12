@@ -3,183 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HEZRON HOST - Free Hosting</title>
+<title>HEZRON HOST - Free Hosting + VPS & Domains</title>
 <style>
-*{box-sizing:border-box;font-family:Arial,sans-serif}
-body{margin:0;background:#0f172a;color:white}
-.header{background:linear-gradient(90deg,#a855f7,#06b6d4);padding:20px;text-align:center;position:sticky;top:0;z-index:10}
-.header h1{margin:0;font-size:28px}
-.header p{margin:5px 0 0;opacity:.9}
-.container{max-width:800px;margin:auto;padding:15px}
-.box{background:#1e293b;padding:18px;border-radius:15px;margin-bottom:15px}
-input,textarea{width:100%;padding:12px;border-radius:10px;border:none;font-size:15px;margin-top:8px;background:white;color:black}
-textarea{height:200px;font-family:monospace}
-button{width:100%;padding:13px;border:none;border-radius:10px;font-size:15px;font-weight:bold;cursor:pointer;margin-top:10px}
-.btn-primary{background:#2dd4bf;color:black}
-.btn-purple{background:#a855f7;color:white}
-.btn-white{background:white;color:black}
-.btn-orange{background:#f59e0b}
-.btn-red{background:#ef4444;color:white}
-.btn-green{background:#22c55e}
-.btn-dark{background:#334155;color:white}
-.btn-gold{background:linear-gradient(90deg,#f59e0b,#fbbf24);color:black}
-.hidden{display:none}
-.topbar{display:flex;justify-content:space-between;align-items:center;background:#020617;padding:10px 15px;border-radius:10px;margin-bottom:15px}
-.project,.user-card{background:#020617;padding:12px;border-radius:12px;margin-top:10px}
-.project h3,.user-card h3{margin:0}
-.project p,.user-card p{font-size:13px;opacity:.8;word-break:break-all}
-.flex{display:flex;gap:8px}
-.flex button{flex:1}
-iframe{width:100%;height:320px;background:white;border:none;border-radius:10px;margin-top:10px}
-.small{font-size:13px;opacity:.8;line-height:1.5}
-.link{color:#2dd4bf;word-break:break-all}
-.tabs{display:flex;gap:8px;margin-bottom:15px}
-.tabs button{flex:1;background:#334155;color:white}
-.tabs button.active{background:#2dd4bf;color:black}
-.badge{background:#22c55e;color:black;padding:3px 8px;border-radius:20px;font-size:11px}
-.badge-admin{background:#f59e0b;color:black;padding:3px 8px;border-radius:20px;font-size:11px}
-.badge-pro{background:linear-gradient(90deg,#f59e0b,#fbbf24);color:black;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:bold}
-.link-btn{color:#2dd4bf;cursor:pointer;text-decoration:underline;font-size:13px}
-.stat-grid{display:flex;gap:10px}
-.stat-grid .box{flex:1;text-align:center}
-.avatar{width:60px;height:60px;border-radius:50%;object-fit:cover;background:#334155;display:flex;align-items:center;justify-content:center;font-size:28px;overflow:hidden;flex-shrink:0}
-.avatar img{width:100%;height:100%;object-fit:cover}
-.avatar-small{width:40px;height:40px;border-radius:50%;object-fit:cover;background:#334155;display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;flex-shrink:0}
-.avatar-small img{width:100%;height:100%;object-fit:cover}
-.profile-row{display:flex;gap:12px;align-items:center}
-.search-box{background:#020617 !important;color:white !important;border:1px solid #334155 !important}
-.pricing{display:flex;gap:10px}
-.pricing .box{flex:1;text-align:center;border:2px solid #334155}
-.pricing .box.pro{border-color:#f59e0b;background:#2a2200}
-.price{font-size:28px;font-weight:bold;margin:10px 0}
-.mpesa-box{background:#022c22;border:2px dashed #22c55e;padding:15px;border-radius:12px;text-align:center;margin-top:10px}
-.postbank-box{background:#1e1b4b;border:2px dashed #a855f7;padding:15px;border-radius:12px;text-align:center;margin-top:10px}
+*{box-sizing:border-box;font-family:Arial,sans-serif}body{margin:0;background:#0f172a;color:white}.header{background:linear-gradient(90deg,#a855f7,#06b6d4);padding:20px;text-align:center;position:sticky;top:0;z-index:10}.container{max-width:900px;margin:auto;padding:15px}.box{background:#1e293b;padding:18px;border-radius:15px;margin-bottom:15px}input,select,textarea{width:100%;padding:12px;border-radius:10px;border:none;font-size:15px;margin-top:8px;background:white;color:black}textarea{height:200px;font-family:monospace}button{width:100%;padding:13px;border:none;border-radius:10px;font-size:15px;font-weight:bold;cursor:pointer;margin-top:10px}.btn-primary{background:#2dd4bf;color:black}.btn-purple{background:#a855f7;color:white}.btn-white{background:white;color:black}.btn-orange{background:#f59e0b}.btn-red{background:#ef4444;color:white}.btn-green{background:#22c55e}.btn-dark{background:#334155;color:white}.btn-gold{background:linear-gradient(90deg,#f59e0b,#fbbf24);color:black}.hidden{display:none}.topbar{display:flex;justify-content:space-between;align-items:center;background:#020617;padding:10px 15px;border-radius:10px;margin-bottom:15px}.project,.user-card{background:#020617;padding:12px;border-radius:12px;margin-top:10px}.flex{display:flex;gap:8px}.flex button{flex:1}iframe{width:100%;height:320px;background:white;border:none;border-radius:10px;margin-top:10px}.small{font-size:13px;opacity:.8;line-height:1.5}.link{color:#2dd4bf;word-break:break-all}.tabs{display:flex;gap:8px;margin-bottom:15px}.tabs button{flex:1;background:#334155;color:white}.tabs button.active{background:#2dd4bf;color:black}.badge{background:#22c55e;color:black;padding:3px 8px;border-radius:20px;font-size:11px}.badge-admin{background:#f59e0b;color:black;padding:3px 8px;border-radius:20px;font-size:11px}.badge-pro{background:linear-gradient(90deg,#f59e0b,#fbbf24);color:black;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:bold}.link-btn{color:#2dd4bf;cursor:pointer;text-decoration:underline;font-size:13px}.stat-grid{display:flex;gap:10px}.stat-grid .box{flex:1;text-align:center}.avatar{width:60px;height:60px;border-radius:50%;background:#334155;display:flex;align-items:center;justify-content:center;font-size:28px;overflow:hidden;flex-shrink:0}.avatar img{width:100%;height:100%;object-fit:cover}.avatar-small{width:40px;height:40px;border-radius:50%;background:#334155;display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;flex-shrink:0}.avatar-small img{width:100%;height:100%;object-fit:cover}.profile-row{display:flex;gap:12px;align-items:center}.search-box{background:#020617!important;color:white!important;border:1px solid #334155!important}.pricing{display:flex;gap:10px;flex-wrap:wrap}.pricing .box{flex:1;min-width:160px;text-align:center;border:2px solid #334155}.pricing .box.pro{border-color:#f59e0b;background:#2a2200}.price{font-size:28px;font-weight:bold;margin:10px 0}.mpesa-box{background:#022c22;border:2px dashed #22c55e;padding:15px;border-radius:12px;text-align:center;margin-top:10px}.postbank-box{background:#1e1b4b;border:2px dashed #a855f7;padding:15px;border-radius:12px;text-align:center;margin-top:10px}.alert{background:#fef3c7;color:black;padding:12px;border-radius:8px;margin:10px 0}
 </style>
 </head>
 <body>
-
-<div class="header">
-<h1>🚀 HEZRON HOST</h1>
-<p>REAL HOSTING - Free | By Hezron</p>
-</div>
-
+<div class="header"><h1>🚀 HEZRON HOST</h1><p>Free Hosting + Shared / VPS / Domains | By Hezron</p></div>
 <div class="container">
-
+<div id="maintScreen" class="hidden box" style="text-align:center"><h2>🛠️ Temporarily Closed</h2><p id="maintText">Maintenance</p></div>
 <div id="authPage">
-  <div class="box" style="text-align:center;">
-    <h2>Welcome to Hezron Host</h2>
-    <p class="small">Host your websites for FREE. Create an account to save and manage your projects.</p>
-  </div>
-  <div class="pricing">
-    <div class="box">
-      <h3>FREE</h3>
-      <div class="price">Ksh 0</div>
-      <p class="small">✅ 3 Projects<br>✅ Live Preview<br>✅ Download Code<br>❌ Hezron Host Branding</p>
-    </div>
-    <div class="box pro">
-      <h3>👑 PRO</h3>
-      <div class="price">Ksh 200<span style="font-size:14px;">/month</span></div>
-      <p class="small">✅ Unlimited Projects<br>✅ No Branding<br>✅ Priority Support<br>✅ Sell Your Sites</p>
-      <button class="btn-gold" onclick="showTab('register')">Go PRO - Register</button>
-    </div>
-  </div>
-  <div class="tabs">
-    <button id="tabLogin" class="active" onclick="showTab('login')">Login</button>
-    <button id="tabRegister" onclick="showTab('register')">Register</button>
-  </div>
-  <div id="loginForm" class="box">
-    <h3>Login to Your Account</h3>
-    <input id="loginEmail" type="email" placeholder="Email Address">
-    <input id="loginPass" type="password" placeholder="Password">
-    <button class="btn-primary" onclick="login()">Login</button>
-    <p style="text-align:center;"><span class="link-btn" onclick="showForgot()">Forgot Password?</span></p>
-  </div>
-  <div id="registerForm" class="box hidden">
-    <h3>Create Free Account</h3>
-    <input id="regName" placeholder="Full Name">
-    <input id="regEmail" type="email" placeholder="Email Address">
-    <input id="regPass" type="password" placeholder="Create Password (min 4 chars)">
-    <button class="btn-purple" onclick="register()">Create Account - It's Free</button>
-  </div>
-  <div id="forgotForm" class="box hidden">
-    <h3>🔑 Forgot Password</h3>
-    <input id="forgotEmail" type="email" placeholder="Your Registered Email">
-    <input id="forgotNewPass" type="password" placeholder="New Password">
-    <button class="btn-orange" onclick="resetPassword()">Reset Password</button>
-    <p style="text-align:center;"><span class="link-btn" onclick="showTab('login')">Back to Login</span></p>
-  </div>
-</div>
-
-<div id="dashboardPage" class="hidden">
-  <div class="topbar">
-    <div class="profile-row">
-      <div class="avatar" id="topAvatar">👤</div>
-      <div><b id="welcomeName">Hi, User</b><br><span id="welcomeEmail" class="small"></span> <span id="adminBadge"></span> <span id="proBadge"></span></div>
-    </div>
-    <button onclick="logout()" style="width:auto;background:#ef4444;color:white;padding:8px 15px;">Logout</button>
-  </div>
-
-  <div id="upgradeBanner" class="box" style="border:2px solid #f59e0b;background:#2a2200;text-align:center;">
-    <h3>👑 Upgrade to PRO - Only Ksh 200/month</h3>
-    <p class="small">You have used <span id="usedCount">0</span>/3 Free Projects. Get Unlimited Projects + No Branding.</p>
-    <button class="btn-gold" onclick="showProPayment()">Upgrade to PRO Now - Pay with M-PESA / Postbank</button>
-    <div id="proPayment" class="hidden">
-      <div class="mpesa-box">
-        <h3>📱 OPTION 1: M-PESA - Send Money</h3>
-        <p><b>1. Go to M-PESA > Send Money</b></p>
-        <p style="font-size:22px;"><b>0708447871</b></p>
-        <p class="small">Name: Hezron Wangila<br>Amount: <b>Ksh 200</b></p>
-      </div>
-      <div class="postbank-box">
-        <h3>🏦 OPTION 2: Postbank Paybill</h3>
-        <p><b>1. Go to M-PESA > Lipa na M-PESA > Paybill</b></p>
-        <p>Paybill Number: <b style="font-size:22px;">200999</b></p>
-        <p>Account Number: <b style="font-size:20px;">0023060095825</b></p>
-        <p class="small">Name: Hezron Wangila - Postbank Kenya<br>Amount: <b>Ksh 200</b></p>
-        <p class="small">For Bank Transfer / SWIFT:<br>Bank: Kenya Post Office Savings Bank<br>SWIFT: KPOBKEN1XXX<br>Account: 0023060095825</p>
-      </div>
-      <p style="margin-top:10px;"><b>2. After paying with ANY method, click below:</b></p>
-      <button class="btn-green" onclick="requestPro()">✅ I Have Paid Ksh 200</button>
-      <p class="small">Admin will approve you within a few hours. You will see 👑 PRO badge.</p>
-    </div>
-    <div id="proPending" class="hidden"><p>⏳ <b>Payment Request Sent!</b> Waiting for Admin approval. Check again later.</p></div>
-  </div>
-
-  <div class="box">
-    <h3>👤 My Profile</h3>
-    <div class="profile-row">
-      <div class="avatar" id="profileAvatar">👤</div>
-      <div style="flex:1">
-        <input id="profileName" placeholder="Your Name">
-        <input type="file" id="photoInput" accept="image/*" onchange="uploadPhoto(event)" style="padding:5px;">
-      </div>
-    </div>
-    <div class="flex">
-      <button class="btn-primary" onclick="saveProfile()">💾 Save Profile</button>
-      <button class="btn-red" onclick="removePhoto()">Remove Photo</button>
-    </div>
-  </div>
-
-  <div class="stat-grid">
-    <div class="box"><b id="totalProjects">0</b><br><span class="small">My Projects</span></div>
-    <div class="box"><b id="planLabel">FREE</b><br><span class="small">Plan</span></div>
-    <div class="box"><b>Unlimited</b><br><span class="small">Bandwidth</span></div>
-  </div>
-
-  <div id="adminPanel" class="box hidden" style="border:2px solid #f59e0b;">
-    <h3>👑 ADMIN PANEL - Owner Only</h3>
-    <div class="stat-grid">
-      <div class="box"><b id="adminTotalUsers">0</b><br><span class="small">Total Users</span></div>
-      <div class="box"><b id="adminTotalProjects">0</b><br><span class="small">Total Projects</span></div>
-      <div class="box"><b id="adminProUsers">0</b><br><span class="small">PRO Users</span></div>
-      <div class="box"><b id="adminPending">0</b><br><span class="small">Pending PRO</span></div>
-    </div>
-    <p class="small" style="color:#fbbf24;">💰 Expected Earnings: <b id="adminEarnings">Ksh 0</b> (PRO Users x 200)</p>
-    <input id="adminSearch" class="search-box" placeholder="🔍 Search by name or email..." oninput="renderAdmin()">
-    <div id="allUsersList"></div>
-    <button class="btn-red" onclick="clearAllUsers()">🗑️ Delete All Users (Reset)</button>
-  </div>
-
-  <div class="tabs">
-    <button id="tabMy" class="active" onclick="showDashTab('my')">My Projects</button>
-    <button id="tabNew" onclick="showDashTab('new')">+ New Project</but
+<div class="box" style="text-align:center"><h2>Welcome to Hezron Host</h2><p class="small">Host your websites for FREE + Buy Shared Hosting, VPS & Domains. Pay with M-Pesa / Postbank.</p><p class="small">WhatsApp: <b>0708447871</b> | Paybill: <b>200999</b> Acc: <b>0023060095825</b></p></div>
+<div class="pricing"><div class="box"><h3>FREE</h3><div class="price">Ksh 0</div><p class="small">✅ 3 Projects<br>✅ Live Preview<br>✅ Download Code</p></div><div class="box pro"><h3>👑 PRO</h3><div class="price">Ksh 200<span style="font-size:14px">/month</span></div><p class="small">✅ Unlimited Projects<br>✅ No Branding<br>✅ Priority Support</p><button class="btn-gold" onclick="showTab('register')">Go PRO - Register</button></div><div class="box"><h3>🌐 HOSTING</h3><div class="price">From Ksh 1,500</div><p class="small">✅ Shared / WordPress<br>✅ VPS / Reseller<br>✅ Domain 1,200/yr</p><button class="btn-primary" onclick="showTab('register')">Get Hosting</button></div></div>
+<div class="tabs"><button id="tabLogin" class="active" onclick="showTab('login')">Login</button><button id="tabRegister" onclick="showTab('register')">Register</button></div>
+<div id="loginForm" class="box"><h3>Login</h3><input id="loginEmail" type="email" placeholder="Email Address"><input id="loginPass" type="password" placeholder="Password"><button class="btn-primary" onclick="login()">Login</button><p style="text-align:center"><span class="link-btn" onclick="showForgot()">Forgot Password?</span> | <span class="link-btn" onclick="resendVerify()">Resend Verification</span></p><p id="loginMsg" class="small"></p></div>
+<div id="registerForm" class="box hidden"><h3>Create Free Account</h3><input id="regName" placeholder="Full Name"><input id="regEmail" type="email" placeholder="Email Address"><input id="regPass" type="password" placeholder="Create Password (min 6 chars)"><button class="btn-purple" onclick="register()">Create Account - It's Free</button><p id="regMsg" class="small"></p></div>
+<div id="forgotForm" class="box hidden"><h3>🔑 Forgot Password</h3><input id="forgotEmail" type="email" placeholder="Your Registered Email"><button class="btn-orange" onclick="resetPassword()">Send Reset Link</button><p style="text-align:center"><span class="link-btn" onclick="showTab('login')">Back to Login</span></p></div>
+                                                                                                                                                                                                                                                                                                                                                            </div><div id="dashboardPage" class="hidden">
+<div class="topbar"><div class="profile-row"><div class="avatar" id="topAvatar">👤</div><div><b id="welcomeName">Hi, User</b><br><span id="welcomeEmail" class="small"></span> <span id="adminBadge"></span> <span id="proBadge"></span></div></div><button onclick="logout()" style="width:auto;background:#ef4444;color:white;padding:8px 15px">Logout</button></div>
+<div id="upgradeBanner" class="box" style="border:2px solid #f59e0b;background:#2a2200;text-align:center"><h3>👑 Upgrade to PRO - Only Ksh 200/month</h3><p class="small">You have used <span id="usedCount">0</span>/3 Free Projects.</p><button class="btn-gold" onclick="showProPayment()">Upgrade to PRO Now</button>
+<div id="proPayment" class="hidden"><div class="mpesa-box"><h3>📱 M-PESA - Send Money</h3><p style="font-size:22px"><b>0708447871</b></p><p class="small">Name: Hezron Wangila | Amount: <b>Ksh 200</b></p></div><div class="postbank-box"><h3>🏦 Postbank Paybill</h3><p>Paybill: <b style="font-size:22px">200999</b></p><p>Account: <b style="font-size:20px">0023060095825</b></p><p class="small">Amount: <b>Ksh 200</b></p></div><button class="btn-green" onclick="requestPro()">✅ I Have Paid Ksh 200</button></div>
+<div id="proPending" class="hidden"><p>⏳ Payment Request Sent! Waiting for Admin approval.</p></div></div>
+<div class="box"><h3>👤 My Profile</h3><div class="profile-row"><div class="avatar" id="profileAvatar">👤</div><div style="flex:1"><input id="profileName" placeholder="Your Name"><input type="file" id="photoInput" accept="image/*" onchange="uploadPhoto(event)" style="padding:5px"></div></div><div class="flex"><button class="btn-primary" onclick="saveProfile()">💾 Save Profile</button><button class="btn-red" onclick="removePhoto()">Remove Photo</button></div></div>
+<div class="stat-grid"><div class="box"><b id="totalProjects">0</b><br><span class="small">My Projects</span></div><div class="box"><b id="planLabel">FREE</b><br><span class="small">Plan</span></div><div class="box"><b id="totalOrders">0</b><br><span class="small">Hosting Orders</span></div></div>
+<div id="adminPanel" class="box hidden" style="border:2px solid #f59e0b"><h3>👑 ADMIN PANEL</h3>
+<div class="box" style="border:2px solid #ef4444"><h3>🚨 Maintenance Mode</h3><p>Status: <b id="maintStatus">Checking...</b></p><input id="maintMsgInput" placeholder="Message for visitors"><div class="flex"><button class="btn-red" onclick="closeWebsite()">CLOSE WEBSITE</button><button class="btn-green" onclick="openWebsite()">OPEN WEBSITE</button></div></div>
+<div class="stat-grid"><div class="box"><b id="adminTotalUsers">0</b><br><span class="small">Users</span></div><div class="box"><b id="adminTotalProjects">0</b><br><span class="small">Projects</span></div><div class="box"><b id="adminProUsers">0</b><br><span class="small">PRO Users</span></div><div class="box"><b id="adminPending">0</b><br><span class="small">Pending PRO</span></div></div>
+<p class="small" style="color:#fbbf24">💰 Expected: <b id="adminEarnings">Ksh 0</b> | Hosting Revenue: <b id="adminRevenue">Ksh 0</b></p>
+<div class="box"><h3>Change My Password</h3><input id="oldPass" type="password" placeholder="Old Password"><input id="newPass" type="password" placeholder="New Password"><input id="confirmPass" type="password" placeholder="Confirm New Password"><button onclick="changePassword()">Change Password</button><p id="passMsg" class="small"></p></div>
+<div class="box"><h3>All Hosting Orders</h3><div id="adminOrdersList"></div></div>
+<input id="adminSearch" class="search-box" placeholder="🔍 Search users..." oninput="renderAdmin()"><div id="allUsersList"></div></div>
+<div class="tabs"><button id="tabMy" class="active" onclick="showDashTab('my')">My Projects</button><button id="tabNew" onclick="showDashTab('new')">+ New Project</button><button id="tabShop" onclick="showDashTab('shop')">🛒 Hosting Shop</button><button id="tabMyOrders" onclick="showDashTab('orders')">My Orders</button></div>
+<div id="myProjectsTab"><input id="projectSearch" class="search-box" placeholder="🔍 Search my projects..." oninput="renderProjects()" style="margin-bottom:10px"><div id="projectsList"></div><div id="noProjects" class="box" style="text-align:center"><p>No projects yet.</p></div><div id="noSearchResult" class="box hidden" style="text-align:center"><p>No project found.</p></div></div>
+<div id="newProjectTab" class="hidden"><div class="box"><h3 id="editorTitle">Create New Project</h3><input id="projName" placeholder="Project Name - e.g. mychat-hezron"><textarea id="projCode" placeholder="<h1>Hello World</h1>"></textarea><div class="flex"><button class="btn-primary" onclick="saveProject()">💾 Save Project</button><button class="btn-purple" onclick="hostProject()">🚀 Host & Preview</button></div><button class="btn-white" onclick="cancelEdit()">Cancel</button><div id="previewArea" class="hidden" style="margin-top:15px"><b>✅ Live Preview:</b><br><span class="small">Your Link:</span> <span id="liveLinkText" class="link"></span><br><br><div class="flex"><button class="btn-green" onclick="copyLiveLink()">📋 Copy Link</button><button class="btn-orange" onclick="downloadCurrent()">⬇️ Download index.html</button></div><div class="flex"><button class="btn-white" onclick="saveToGist()">⬛ Save to GitHub Gist</button><button class="btn-white" onclick="openNetlify()">▲ Open Netlify Drop</button></div><iframe id="previewFrame"></iframe></div></div></div>
+<div id="shopTab" class="hidden">
+<div class="box"><h3>🔍 Check<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, signOut, onAuthStateChanged, reauthenticateWithCredential, EmailAuthProvider, updatePassword} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import {getFirestore, collection, addDoc, getDocs, doc, setDoc, getDoc, query, where, serverTimestamp, updateDoc, deleteDoc} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import {getFunctions, httpsCallable} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
+const firebaseConfig={apiKey:"AIzaSyDgd3N3VGfGCBuCNe24KjltsQ-9ikLCI8U",authDomain:"hezron-host.firebaseapp.com",projectId:"hezron-host",storageBucket:"hezron-host.firebasestorage.app",messagingSenderId:"439502435586",appId:"1:439502435586:web:6ef87f64a6cb39fe9f7e1b",measurementId:"G-D47CP262XM"};
+const app=initializeApp(firebaseConfig); const auth=getAuth(app); const db=getFirestore(app); const functions=getFunctions(app);
+const ADMIN_EMAIL="hezronwangila482@gmail.com";
+let currentUser=null, currentProfile=null, editingId=null, currentBlob="", tempPhoto="", cart=[];
+let defaultPlans=[{name:"Shared Starter",price:1500,desc:"1 Website • 10GB SSD • Free SSL • 5 Emails"},{name:"WordPress Pro",price:2500,desc:"5 Websites • 30GB SSD • Free Domain • Daily Backup"},{name:"VPS Basic",price:5000,desc:"2 vCPU • 4GB RAM • 80GB SSD • Root Access"},{name:"Reseller",price:8000,desc:"Unlimited Sites • 100GB SSD • WHM/cPanel"}];
+function isAdmin(){return currentUser && currentUser.email===ADMIN_EMAIL} function isPro(){return currentProfile && currentProfile.plan==="PRO"}
+window.showTab=(t)=>{["loginForm","registerForm","forgotForm"].forEach(id=>document.getElementById(id).classList.add("hidden")); if(t==="login")document.getElementById("loginForm").classList.remove("hidden"); if(t==="register")document.getElementById("registerForm").classList.remove("hidden"); document.getElementById("tabLogin").classList.toggle("active",t==="login"); document.getElementById("tabRegister").classList.toggle("active",t==="register");}
+window.showForgot=()=>{["loginForm","registerForm"].forEach(id=>document.getElementById(id).classList.add("hidden")); document.getElementById("forgotForm").classList.remove("hidden");}
+window.showDashTab=(t)=>{["myProjectsTab","newProjectTab","shopTab","ordersTab"].forEach(id=>document.getElementById(id).classList.add("hidden")); if(t==="my")document.getElementById("myProjectsTab").classList.remove("hidden"); if(t==="new")document.getElementById
